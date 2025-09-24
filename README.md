@@ -183,7 +183,7 @@ dbt test
 dbt docs generate
 ```
 
-## 📈 Modelos de Dados
+##  Modelos de Dados
 
 ### Bronze Layer
 - `bronze_customer_events`: Eventos brutos de clientes
@@ -294,7 +294,7 @@ python -m pytest tests/test_dags.py
 ./scripts/integration_test.sh
 ```
 
-## 🚀 Deploy e CI/CD
+##  Deploy e CI/CD
 
 ### Ambientes
 - **DEV**: Desenvolvimento local com LocalStack
@@ -314,7 +314,7 @@ python -m pytest tests/test_dags.py
   run: python scripts/data_quality_check.py
 ```
 
-## 📚 Tecnologias Demonstradas
+##  Tecnologias Demonstradas
 
 ### Data Engineering
 - **Stream Processing**: Kinesis real-time ingestion
@@ -382,12 +382,3 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 **Desenvolvido por Ivan de França**
 
-- **LinkedIn**: [Ivan de França](https://linkedin.com/in/ivan-franca)
-- **Email**: ivan.franca@email.com
-- **GitHub**: [@ivan-franca](https://github.com/ivan-franca)
-
----
-
-*Pipeline enterprise demonstrando as melhores práticas em Data Engineering, Analytics Engineering e DataOps.*
-
-**Tags**: `data-engineering` `apache-airflow` `dbt` `aws-kinesis` `postgresql` `docker` `grafana` `analytics-engineering` `dataops` `real-time-processing`
