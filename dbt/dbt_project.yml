@@ -1,0 +1,43 @@
+name: 'enterprise_dw'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'enterprise_dw'
+
+# These configurations specify where dbt should look for different types of files.
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Configuring models
+models:
+  enterprise_dw:
+    # Config indicated by + and applies to all files under models/example/
+    bronze:
+      +materialized: table
+      +schema: bronze
+    silver:
+      +materialized: table
+      +schema: silver
+    gold:
+      +materialized: table
+      +schema: gold
+
+vars:
+  # Data quality thresholds
+  max_null_percentage: 0.05
+  min_row_count: 100
+  
+  # Business logic parameters
+  high_value_transaction_threshold: 1000
+  fraud_score_threshold: 0.7
+  active_customer_days: 30

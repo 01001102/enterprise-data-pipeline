@@ -1,0 +1,27 @@
+enterprise_dw:
+  outputs:
+    dev:
+      type: postgres
+      threads: 4
+      host: postgres
+      port: 5432
+      user: airflow
+      pass: airflow
+      dbname: airflow
+      schema: public
+      keepalives_idle: 0
+      search_path: "public"
+    
+    prod:
+      type: postgres
+      threads: 8
+      host: postgres
+      port: 5432
+      user: airflow
+      pass: airflow
+      dbname: airflow
+      schema: public
+      keepalives_idle: 0
+      search_path: "public"
+      
+  target: dev

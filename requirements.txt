@@ -1,0 +1,8 @@
+apache-airflow==2.7.0
+dbt-postgres==1.6.0
+boto3==1.28.0
+pandas==2.0.3
+psycopg2-binary==2.9.7
+faker==19.6.2
+numpy==1.24.3
+sqlalchemy==1.4.49
